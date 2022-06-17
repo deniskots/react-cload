@@ -1,0 +1,31 @@
+.profile {
+  width: 100%;
+  height: calc(100vh - 50px - 40px);
+  margin: 20px;
+  border: solid darkgrey 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+
+
+  &__btns {
+    display: flex;
+    align-items: center;
+
+  }
+  &__input {
+    align-self: center;
+  }
+  &__btn {
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: none;
+    align-self: flex-end;
+    background-image: url("../../assets/img/icons8-мусор.svg");
+    background-size: contain;
+  }
+}

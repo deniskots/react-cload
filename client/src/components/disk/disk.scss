@@ -1,0 +1,209 @@
+.disk {
+  margin-top: 20px;
+
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__btns-left {
+    display: flex;
+    margin: 12px;
+  }
+
+  &__btns-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__back, &__create {
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: no-repeat center center;
+    background-size: contain;
+    margin: 0 3px;
+  }
+
+  &__back {
+    background-image: url("../../assets/img/back-svgrepo-com.svg");
+  }
+
+  &__create {
+    background-image: url("../../assets/img/plus-svgrepo-com.svg");
+  }
+
+  &__upload {
+    margin-top: 8px;
+  }
+
+  &__upload-input {
+    display: none;
+  }
+
+  &__upload-label {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .popup {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+      width: 400px;
+      background: #e2e8f0;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    &__create {
+      width: 100px;
+      align-self: center;
+      margin-top: 10px;
+      padding: 8px;
+      text-transform: uppercase;
+      transition: 0.5s;
+      color: white;
+      border-radius: 20px;
+      border: none;
+      font-weight: 700;
+      box-shadow: 0px 0px 14px -7px #f09819;
+      background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+    &__close {
+      padding: 2px;
+      text-transform: uppercase;
+      transition: 0.5s;
+      color: #0d172a;
+      border-radius: 5px;
+      border: 1px;
+      font-weight: 700;
+      background-color: transparent;
+      cursor: pointer;
+
+    }
+  }
+
+  &__select {
+    padding: 5px;
+  }
+
+  &__plate, &__list {
+    width: 25px;
+    height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: no-repeat center center;
+    background-size: contain;
+    margin: 0 5px;
+  }
+
+  &__list {
+    background-image: url("../../assets/img/Vector.svg");
+  }
+
+  &__plate {
+    background-image: url("../../assets/img/Union.svg");
+  }
+}
+
+.drop-area {
+  width: 100%;
+  height: calc(100vh - 50px - 40px);
+  margin: 20px;
+  border: solid darkgrey 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 50px);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #F09819;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}

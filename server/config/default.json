@@ -1,0 +1,13 @@
+{
+  "serverPort" : 5000,
+  "dbUrl": "mongodb+srv://project:project@cluster0.pr0na.mongodb.net/mern-disk?retryWrites=true&w=majority",
+
+  "secretKey": "hello",
+  "filePath": "/home/kotsy/projects/mern-cloud/server/files",
+  "staticPath": "/home/kotsy/projects/mern-cloud/server/static"
+
+}
+
+//mongodb+srv://hello:World@cluster0.xphcf.mongodb.net/cloudinary?retryWrites=true&w=majority
+
+//E:\Projects\cloud-disk\server\files
